@@ -8,7 +8,6 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 
-
 public class IAnimalTest {
 
 	public IAnimal AnimalMock;
@@ -55,17 +54,4 @@ public class IAnimalTest {
 	public void tearDown() {
 		AnimalMock = null;
 	}
-
-
-
-	/*
-
-	boolean isSecret();
-
-
-	boolean isEndangered();
-
-
-	boolean isBoss();
-*/
 }
