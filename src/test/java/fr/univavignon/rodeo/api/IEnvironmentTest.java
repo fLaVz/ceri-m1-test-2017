@@ -1,5 +1,6 @@
 package fr.univavignon.rodeo.api;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -12,12 +13,12 @@ import static org.mockito.Mockito.when;
 
 public class IEnvironmentTest {
 
-	public IEnvironment envMock;
+	public IEnvironment EnvMock;
 	public List<ISpecie> specList;
 
 	public IEnvironment getInstance() {
 
-		IEnvironment envMock = mock(IEnvironment.class);
+		IEnvironment EnvMock = mock(IEnvironment.class);
 
 		specList = new ArrayList<>();
 		ISpecie	specMock1 = mock(ISpecie.class);
@@ -27,24 +28,30 @@ public class IEnvironmentTest {
 		specList.add(specMock2);
 		specList.add(specMock3);
 
-		when(envMock.getAreas()).thenReturn(10);
-		when(envMock.getSpecies()).thenReturn(specList);
+		when(EnvMock.getAreas()).thenReturn(10);
+		when(EnvMock.getSpecies()).thenReturn(specList);
 
-		return envMock;
+		return EnvMock;
 	}
 
 	@Before
 	public void setup() {
-		envMock = getInstance();
+		EnvMock = getInstance();
 	}
 
 	@Test
 	public void testGetAreas() {
-		assertEquals(envMock.getAreas(), 10);
+		assertEquals(EnvMock.getAreas(), 10);
 	}
 
 	@Test
 	public void testGetSpecies() {
-		assertEquals(envMock.getSpecies(), specList);
+		assertEquals(EnvMock.getSpecies(), specList);
 	}
+
+	@After
+	public void tearDown() {
+		EnvMock = null;
+	}
+
 }
