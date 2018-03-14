@@ -1,38 +1,46 @@
 package fr.univavignon.rodeo.api;
 
-/**
- * Animal definition.
- * 
- * @author fv
- */
-public interface IAnimalTest extends INamedObject {
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-	/**
-	 * Getter for the associated species XP.
-	 * 
-	 * @return The amount of XP given when riding it.
-	 */
-	int getXP();
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
 
-	/**
-	 * Indicates if this animal is a secret one.
-	 * 
-	 * @return <tt>true</tt> if this animal is a secret one, <tt>false</tt> otherwise.
-	 */
+
+
+public class IAnimalTest {
+
+	IAnimal AnimalMock;
+
+	@Before
+	public void setUp() {
+
+		AnimalMock = mock(IAnimal.class);
+		when(AnimalMock.getXP()).thenReturn(100);
+	}
+
+	@Test
+	public void testGetXP() {
+
+		assertEquals(AnimalMock.getXP(), 100);
+	}
+
+
+	@After
+	public void tearDown() {
+
+		AnimalMock = null;
+	}
+
+	/*
+
 	boolean isSecret();
 
-	/**
-	 * Indicates if this animal is an endangered one..
-	 * 
-	 * @return <tt>true</tt> if this animal is an endangered one, <tt>false</tt> otherwise.
-	 */
+
 	boolean isEndangered();
 
-	/**
-	 * Indicates if this animal is a boss.
-	 * 
-	 * @return <tt>true</tt> if this animal is a boss, <tt>false</tt> otherwise.
-	 */
-	boolean isBoss();
 
+	boolean isBoss();
+*/
 }
