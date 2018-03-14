@@ -11,13 +11,22 @@ import static org.mockito.Mockito.*;
 
 public class IAnimalTest {
 
-	IAnimal AnimalMock;
+	public IAnimal AnimalMock;
 
 	@Before
 	public void setUp() {
+		AnimalMock = getInstance();
+	}
 
-		AnimalMock = mock(IAnimal.class);
+	public IAnimal getInstance() {
+
+		IAnimal AnimalMock = mock(IAnimal.class);
 		when(AnimalMock.getXP()).thenReturn(100);
+		when(AnimalMock.isSecret()).thenReturn(true);
+		when(AnimalMock.isEndangered()).thenReturn(true);
+		when(AnimalMock.isBoss()).thenReturn(true);
+
+		return AnimalMock;
 	}
 
 	@Test
@@ -26,12 +35,28 @@ public class IAnimalTest {
 		assertEquals(AnimalMock.getXP(), 100);
 	}
 
+	@Test
+	public void testIsSecret() {
+		assertEquals(AnimalMock.isSecret(), true);
+	}
+
+	@Test
+	public void testIsEndangered() {
+		assertEquals(AnimalMock.isEndangered(), true);
+	}
+
+	@Test
+	public void testIsBoss() {
+		assertEquals(AnimalMock.isBoss(), true);
+	}
+
 
 	@After
 	public void tearDown() {
-
 		AnimalMock = null;
 	}
+
+
 
 	/*
 
