@@ -3,7 +3,6 @@ package fr.univavignon.rodeo.api;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;

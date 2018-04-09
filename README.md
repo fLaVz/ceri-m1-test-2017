@@ -12,3 +12,17 @@
 ### External
 
 - [JUnit 5 documentation](http://junit.org/junit5/docs/current/user-guide)
+
+
+## Work Done
+
+### Interface tests   
+- [x] IAnimalTest     
+- [x] IEnvironmentTest    
+- [x] IEnvironmentProviderTest    
+- [x] IGameStateTest  
+- [x] IGameStateProviderTest  
+- [x] ISpecieTest 
+                
+                
+
