@@ -1,4 +1,7 @@
-# ceri-m2-test
+# ceri-m1-test
+[![codecov](https://codecov.io/gh/fLaVz/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/fLaVz/ceri-m1-test-2017)
+[![CircleCI](https://circleci.com/gh/fLaVz/ceri-m1-test-2017/tree/master.svg?style=svg)](https://circleci.com/gh/fLaVz/ceri-m1-test-2017/tree/master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98a8d41709534a56b7bd89c20b768374)](https://www.codacy.com/app/fLaVz/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fLaVz/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
 
 ## Resources
 
@@ -23,11 +26,3 @@
 - [x] IGameStateTest  
 - [x] IGameStateProviderTest  
 - [x] ISpecieTest 
-                
-## Badges
-
-[![codecov](https://codecov.io/gh/fLaVz/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/fLaVz/ceri-m1-test-2017)
-[![CircleCI](https://circleci.com/gh/fLaVz/ceri-m1-test-2017/tree/master.svg?style=svg)](https://circleci.com/gh/fLaVz/ceri-m1-test-2017/tree/master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98a8d41709534a56b7bd89c20b768374)](https://www.codacy.com/app/fLaVz/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fLaVz/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
-                
-
