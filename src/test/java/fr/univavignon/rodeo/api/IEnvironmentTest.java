@@ -35,7 +35,7 @@ public class IEnvironmentTest {
 	}
 
 	@Before
-	public void setup() {
+	public void setUp() {
 		EnvMock = getInstance();
 	}
 
