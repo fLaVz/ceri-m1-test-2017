@@ -11,8 +11,8 @@ import static org.mockito.Mockito.when;
 
 public class IEnvironmentTest {
 
-	public IEnvironment EnvMock;
-	public List<ISpecie> specList;
+	private IEnvironment EnvMock;
+	private List<ISpecie> specList;
 
 	public IEnvironment getInstance() {
 
@@ -51,5 +51,4 @@ public class IEnvironmentTest {
 	public void tearDown() {
 		EnvMock = null;
 	}
-
 }

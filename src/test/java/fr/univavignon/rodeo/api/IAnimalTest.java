@@ -8,10 +8,9 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 
-
 public class IAnimalTest {
 
-	public IAnimal AnimalMock;
+	private IAnimal AnimalMock;
 
 	@Before
 	public void setUp() {
